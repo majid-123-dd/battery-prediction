@@ -2,8 +2,9 @@ import streamlit as st
 import numpy as np
 import joblib
 import matplotlib.pyplot as plt
-import base64
 import pandas as pd
+import seaborn as sns
+
 
 # -------------------------
 # PAGE CONFIG
@@ -120,3 +121,4 @@ if st.button("🚀 Predict Battery Life"):
         st.pyplot(fig)
     except:
         st.info("Feature importance available only for Decision Tree model.")
+
